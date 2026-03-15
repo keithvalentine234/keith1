@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+  box-sizing: border-box;
+}
+</style>
+
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Last Weekend Together.Project/3/15/2026</title>
+
+<style>
+
+body{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color:#96A78D;
+color:#F0F0F0;
+text-align:center;
+margin:0;
+}
+
+
+header{
+background-color:#778873;
+padding:20px;
+border-bottom:4px solid #A6B28B;
+}
+
+
+section{
+margin:20px;
+padding:25px;
+border:3.5px solid #F0F0F0;
+border-radius:12px;
+}
+
+
+.profile-pic{
+width:180px;
+border-radius:50%;
+border:5px solid #ececec;
+}
+
+
+.profile-pic:hover{
+box-shadow:0 0 20px #3f5f4c;
+transform:scale(1.05);
+}
+
+.skill{
+color: #F0F0F0;
+display:inline-block;
+background-color:#778873;
+padding:15px;
+margin:10px;
+border-radius:10px;
+border:2px solid #F0F0F0;
+transition:0.3s;
+}
+
+.link{
+  text-decoration: none;
+}
+
+
+.skill:hover{
+transform:scale(1.1);
+}
+
+#hobbies ul{
+  list-style-position: inside;
+  padding:0;
+}
+
+button{
+background-color:#cecece;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background-color:#B6CEB4;
+}
+
+
+@media (max-width:600px){
+
+.skill{
+display:block;
+margin:10px auto;
+width:150px;
+}
+
+#hobbies{
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Portfolio Project</h1>
+<p>Welcome to my personal webpage</p>
+</header>
+
+<section>
+
+<img src="https://cdn.discordapp.com/attachments/1481992298546991293/1481992473923424348/IMG_20260213_150639.jpg?ex=69b5548b&is=69b4030b&hm=318eb4d803572d630e8605dfae04381210e46130d5f24ff71f898c04db1e8770&" class="profile-pic">
+
+<h2>Shwe Wunn Yan Min @ Keith</h2>
+<p>Age: 13</p>
+<p>Height: 5'5</p>
+<p>August 15 2012</p>
+
+</section>
+
+<section>
+
+<h1>
+About Me</h1>
+
+<p>
+I am a student of Pride ISM, I find interest in cooking, baking, arts, music and theatre. I have been the leader of my school's Drama Club for 2 years and I am very fond of cats! I like DC, games and books.
+</p>
+
+<h1>Summary</h1>
+<p>
+I am a 13 year old girl, born on August 15 of 2012. I have many friends and I am a social person, my grades are average. I excel in very few parts academically. You could describe me as a tall girl with black wavy hair and dark eyes.
+</p>
+
+</section>
+
+<section>
+
+<h2>My Skills</h2> 
+
+<a class="link" href="https://en.wikipedia.org/wiki/Acting"><div class="skill">Drama</div></a>
+<a class="link" href="https://en.wikipedia.org/wiki/Singing"><div class="skill">Singing</div></a>
+<a class="link" href="https://en.wikipedia.org/wiki/Arts_and_Crafts_movement"><div class="skill">Arts and crafts</div></a>
+
+</section>
+
+<section>
+
+<h2>My Hobbies</h2>
+
+<button onclick="showHobbies()">Show My Hobbies</button>
+
+<div id = "hobbies"style="display:none;"">
+<ul>
+<li>Painting</li>
+<li>Singing</li>
+<li>Acting</li>
+<li>Gaming</li>
+</ul>
+</div>
+
+<br><br>
+
+<button onclick="funFact()">Fun Fact</button>
+
+<p id="fact"></p>
+
+</section>
+
+<footer>
+<p>Thank you for teaching us!</p>
+</footer>
+
+<script>
+
+function showHobbies(){
+
+var list=document.getElementById("hobbies");
+
+if(list.style.display==="none"){
+list.style.display="block";
+}
+else{
+list.style.display="none";
+}
+
+}
+
+function funFact(){
+document.getElementById("fact").innerText=
+"Fun fact: I have a stuff animal named after me but it's spelt 'Keef'!";
+}
+
+</script>
+
+</body>
+</html>
